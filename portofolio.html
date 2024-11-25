@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anas Mohamed Portfolio</title>
+  <style>
+    /* General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f7f9fc;
+      color: #333;
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      background: linear-gradient(135deg, #4466aa, #89c7f3);
+      color: white;
+      padding: 3rem 1rem;
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #ffffff;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    header h1 {
+      margin: 1rem 0;
+      font-size: 2.5rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      animation: fadeIn 2s ease-in-out 0.5s;
+    }
+
+    section {
+      padding: 3rem 1rem;
+      max-width: 800px;
+      margin: 0 auto;
+      animation: slideIn 1s ease-in-out;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #4466aa;
+      position: relative;
+    }
+
+    section h2::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: #4466aa;
+      margin: 0.5rem auto 0;
+      border-radius: 5px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      background: #ffffff;
+      margin: 0.8rem 0;
+      padding: 1rem;
+      border-left: 5px solid #4466aa;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    ul li:hover {
+      transform: scale(1.05);
+    }
+
+    #contact p {
+      text-align: center;
+      font-size: 1.1rem;
+      margin: 0.5rem 0;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateX(-100px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-15px);
+      }
+    }
+
+    footer {
+      text-align: center;
+      background: #4466aa;
+      color: white;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <img src="pfp.jpeg" alt="Anas Mohamed">
+    <h1>Anas Mohamed</h1>
+    <p>Graphic Designer and Front-End Developer</p>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a 16-year-old high school student passionate about graphic design and front-end development. Proficient in tools like Adobe Photoshop, Illustrator, and web technologies such as HTML, CSS, and JavaScript, I bring creativity, attention to detail, and enthusiasm to every project.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Web Design</li>
+      <li>Branding</li>
+      <li>Adobe Photoshop</li>
+      <li>HTML, CSS, and JavaScript</li>
+      <li>Critical Thinking</li>
+      <li>Video Montage</li>
+    </ul>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul>
+      <li><strong>IT Supporter Specialist</strong> - Arabic Milling Company (2024)</li>
+      <li><strong>Graphic and Logo Designer</strong> - Freelancer (2019–2024)</li>
+      <li><strong>Front-End Developer</strong> - Freelancer (2022–2024)</li>
+      <li><strong>Rewriter and Translator</strong> - Freelancer (2020–2024)</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>📞 +20 1093104420</p>
+    <p>📧 anasmanaa67@gmail.com</p>
+    <p>📍 45 Street, Alex, Egypt</p>
+  </section>
+
+  <footer>
+    © 2024 Anas Mohamed. All rights reserved.
+  </footer>
+</body>
+</html>
